@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-integer-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-integer-dtypes@v0.1.1-deno/mod.js';
 ```
 
 #### dtypes()
@@ -96,7 +96,7 @@ The output `array` contains the following data types:
 
 ```javascript
 import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-index-of@deno/mod.js';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-integer-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-integer-dtypes@v0.1.1-deno/mod.js';
 
 var DTYPES = dtypes();
 
