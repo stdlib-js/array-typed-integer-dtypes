@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,30 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var tape = require( 'tape' );
-var dt = require( '@stdlib/array-dtypes' );
-var dtypes = require( './../lib' );
+import { IntegerDataType as DataType } from '@stdlib/types/array';
+
+/**
+* Returns a list of typed array integer data types.
+*
+* @returns list of typed array integer data types
+*
+* @example
+* var list = dtypes();
+* // e.g., returns [ 'int16', ... ]
+*/
+declare function dtypes(): Array<DataType>;
 
 
-// TESTS //
+// EXPORTS //
 
-tape( 'main export is a function', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( typeof dtypes, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns a list of typed array data types', function test( t ) {
-	var expected;
-	var actual;
-
-	expected = dt( 'integer' );
-	actual = dtypes();
-
-	t.deepEqual( actual, expected, 'returns expected value' );
-	t.end();
-});
+export = dtypes;
